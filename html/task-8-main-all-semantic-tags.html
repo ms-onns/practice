@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>HTML: Final practice</h1>
+            <p>This page is the culmination of all the knowledge I have gained from HTML.</p>
+            <p>
+                <strong>Section navigation:</strong>
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="#section-1">Structure and Semantics</a></li>
+                    <li><a href="#section-2">Forms</a></li>
+                    <li><a href="#section-3">Tables</a></li>
+                    <li><a href="#section-4">Media elements</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr />
+        <main>
+            <section id="section-1">
+                <h2>1. Structure and Semantics</h2>
+                <p>Basic HTML tags: from simple to semantic</p>
+                <nav>
+                    <ul>
+                        <li>
+                             <a href="tags.html" target="_blank">A brief overview of tags and their purpose</a>
+                        </li>
+                    </ul>
+                </nav>
+                <article>
+                    <h3>Internal Content (Article)</h3>
+                    <p>
+                        The <code>&lt;article&gt;</code> tag is used for self-contained content, such as a news article or blog post.
+                    </p>
+                    <blockquote>
+                        “Web development is an exciting journey that begins with HTML.”
+                    </blockquote>
+                    <p>
+                        <code>&lt;blockquote&gt;</code> helps to highlight a quote from another source.
+                    </p>
+                </article>
+
+                <aside>
+                    <h3>Additional information (Aside)</h3>
+                    <p>
+                        The <code>&lt;aside&gt;</code> tag contains content that is related to the main content but can be separated from it (for example, a sidebar).
+                    </p> 
+                </aside>
+        
+            </section>
+            <hr />
+            <section id="section-2">
+                <h2>2. Forms</h2>
+                <p>Here are all the main elements of the forms, including the ones you asked about.</p>
+                <form>
+                    <fieldset>
+                        <legend>Contact information</legend>
+                        <label for="name">Your name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name"><br />
+                        <label for="email">Your email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email"><br />
+                        <label for="message">Your message</label>
+                        <textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your choice</legend>
+                        <p>Select your favorite fruit:</p>
+                        <label for="apple">Apple</label>
+                        <input type="radio" id="apple" name="fruit" value="apple" checked><br />
+                        <label for="banana">Banana</label>
+                        <input type="radio" id="banana" name="fruit" value="banana">
+
+                        <p>Select what you know:</p>
+                        <label for="css">CSS</label>
+                        <input type="checkbox" id="css" name="skill" value="css"><br />
+                        <label for="html">HTML</label>
+                        <input type="checkbox" id="html" name="skill" value="html"><br />
+                        <label for="country">Select a country:</label>
+                        <select name="country" id="country">
+                            <optgroup label="Europe">
+                                <option value="ukraine">Ukraine</option>
+                                <option value="poland">Poland</option>
+                            </optgroup>
+                            <optgroup label="Asian">
+                                <option value="japan">Japan</option>
+                                <option value="china">China</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <button type="submit">Send form</button>
+                </form>
+            </section>
+            <hr />
+            <section id="section-3">
+                <h2>3. Table</h2>
+                <p>Table with merged cells.</p>
+                <table>
+                    <caption>Lesson schedule</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Day</th>
+                            <th colspan="2">Morning classes</th>
+                            <th rowspan="2">Lunch</th>
+                            <th colspan="2">Afternoon classes</th>
+                        </tr>
+                        <tr>
+                            <th>9:00 - 10:30</th>
+                            <th>10:45 - 12:15</th>
+                            <th>13:30 - 15:00	</th>
+                            <th>15:15 - 16:45</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Mathematics</td>
+                            <td>History</td>
+                            <td rowspan="2">Lunch</td>
+                            <td>Chemistry</td>
+                            <td>Sport</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Physics</td>
+                            <td>Literature</td>
+                            <td>Computer Science</td>
+                            <td>English</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr />
+            <section id="section-4">
+                <h2>4. Media elements</h2>
+                <p>Tags for adding audio and video.</p>
+
+                <h3>Video</h3>
+                <video  controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>
+
+                <h3>Audio</h3>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                </audio>
+
+                <h3>Image</h3>
+                <figure>
+                    <img src="https://picsum.photos/400/300" alt="Random image that demonstrates the img tag.">
+                    <figcaption><strong>Figure - 1</strong>An image that demonstrates the <code>&lt;img&gt;</code> tag.</figcaption>
+                </figure>
+            </section>
+        </main>
+        <hr />
+        <footer>
+            <address>
+                <p>
+                    Final practical assignment: combining and consolidating knowledge of all HTML tags.<br>
+                    <small>All rights reserved &copy; 2024</small>
+                </p>
+            </address>
+        </footer>
+    </body>
+</html>
